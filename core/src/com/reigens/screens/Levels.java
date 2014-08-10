@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
 public class Levels implements Screen
@@ -64,8 +65,7 @@ public class Levels implements Screen
                     @Override
                     public void run()
                     {
-                        ((Game) Gdx.app.getApplicationListener()).setScreen(new MainMenu());
-                        // change to playing game ....
+                        ((Game) Gdx.app.getApplicationListener()).setScreen(new play());
                     }
                 })));
             }
