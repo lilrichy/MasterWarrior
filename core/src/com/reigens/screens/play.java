@@ -90,7 +90,7 @@ public class play implements Screen {
         gold.pad(10);
         //Battle button
         TextButton battle = new TextButton("Battle", skin);
-        gold.addListener(new ClickListener() {
+        battle.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 stage.addAction(sequence(moveTo(0, stage.getHeight(), .5f), run(new Runnable() {
@@ -104,7 +104,7 @@ public class play implements Screen {
         battle.pad(10);
         //Upgrades button
         TextButton upgrades = new TextButton("Upgrade Shop", skin);
-        gold.addListener(new ClickListener() {
+        upgrades.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 stage.addAction(sequence(moveTo(0, stage.getHeight(), .5f), run(new Runnable() {
