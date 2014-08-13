@@ -11,11 +11,9 @@ import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
-import com.badlogic.gdx.scenes.scene2d.ui.Skin;
-import com.badlogic.gdx.scenes.scene2d.ui.Table;
-import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.reigens.MasterWarrior;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
@@ -26,6 +24,7 @@ public class play implements Screen {
     private Stage stage;
     private Table table;
     private Skin skin;
+    private Image screenBg;
 
     private World world;
     private Box2DDebugRenderer debugRenderer;
@@ -45,6 +44,8 @@ public class play implements Screen {
     @Override
     public void resize(int width, int height) {
         stage.getViewport().update(width, height, true);
+        // Make the background fill the screen
+        screenBg.setSize(width, height);
         table.invalidateHierarchy();
     }
 
@@ -54,7 +55,11 @@ public class play implements Screen {
 
         Gdx.input.setInputProcessor(stage);
 
-        skin = new Skin(Gdx.files.internal("ui/menuSkin.json"), new TextureAtlas("ui/atlas.pack"));
+        TextureAtlas uiPack = MasterWarrior.manager.get("ui/newUI.pack", TextureAtlas.class);
+        skin = new Skin(Gdx.files.internal("ui/menuSkin.json"), uiPack);
+        screenBg = new Image(uiPack.findRegion("blank_window"));
+        stage.addActor(screenBg);
+
 
         table = new Table(skin);
         table.setFillParent(true);
@@ -119,14 +124,14 @@ public class play implements Screen {
 
 
         //Set up Table
-        table.add(new Label("Where to go?", skin, "big")).colspan(5).expandX().spaceBottom(50).row();
+        table.add(new Label("Where to go?", skin, "big")).padTop(100).colspan(5).expandX().spaceBottom(50).row();
         table.add().row().expandY();
         // Add Buttons to table
         table.add();
         table.add(gold).uniformX();
         table.add(battle);
         table.add(upgrades);
-        table.add(back).uniformX().bottom().right();
+        table.add(back).padBottom(100).padRight(125).uniformX().bottom().right();
 
         stage.addActor(table);
 
@@ -156,8 +161,7 @@ public class play implements Screen {
 
     @Override
     public void dispose() {
-        stage.dispose();
-        skin.dispose();
+
         world.dispose();
         debugRenderer.dispose();
     }

@@ -8,11 +8,9 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
-import com.badlogic.gdx.scenes.scene2d.ui.Skin;
-import com.badlogic.gdx.scenes.scene2d.ui.Table;
-import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.reigens.MasterWarrior;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
@@ -24,6 +22,7 @@ public class upgradeScreen implements Screen {
     private Stage stage;
     private Table table;
     private Skin skin;
+    private Image screenBg;
 
     @Override
     public void render(float delta) {
@@ -38,6 +37,8 @@ public class upgradeScreen implements Screen {
     @Override
     public void resize(int width, int height) {
         stage.getViewport().update(width, height, true);
+        // Make the background fill the screen
+        screenBg.setSize(width, height);
         table.invalidateHierarchy();
     }
 
@@ -47,7 +48,11 @@ public class upgradeScreen implements Screen {
 
         Gdx.input.setInputProcessor(stage);
 
-        skin = new Skin(Gdx.files.internal("ui/menuSkin.json"), new TextureAtlas("ui/atlas.pack"));
+        TextureAtlas uiPack = MasterWarrior.manager.get("ui/newUI.pack", TextureAtlas.class);
+        skin = new Skin(Gdx.files.internal("ui/menuSkin.json"), uiPack);
+        screenBg = new Image(uiPack.findRegion("blank_window"));
+        stage.addActor(screenBg);
+
 
         table = new Table(skin);
         table.setFillParent(true);
@@ -69,10 +74,10 @@ public class upgradeScreen implements Screen {
         back.pad(10);
 
         //Set up Table
-        table.add(new Label("Upgrades", skin, "big")).colspan(3).expandX().spaceBottom(50).row();
+        table.add(new Label("Upgrades", skin, "big")).padTop(100).colspan(3).expandX().spaceBottom(50).row();
         table.add().uniformX().expandY().left();
         table.add().uniformX();
-        table.add(back).uniformX().bottom().right();
+        table.add(back).padBottom(100).padRight(125).uniformX().bottom().right();
 
         stage.addActor(table);
 
@@ -96,7 +101,6 @@ public class upgradeScreen implements Screen {
 
     @Override
     public void dispose() {
-        stage.dispose();
-        skin.dispose();
+
     }
 }

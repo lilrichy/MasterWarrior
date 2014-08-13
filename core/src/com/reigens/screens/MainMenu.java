@@ -12,10 +12,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
-import com.badlogic.gdx.scenes.scene2d.ui.Skin;
-import com.badlogic.gdx.scenes.scene2d.ui.Table;
-import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.reigens.MasterWarrior;
@@ -31,6 +28,8 @@ public class MainMenu implements Screen {
     private Skin skin;
     private Table table;
     private TweenManager tweenManager;
+    private Image screenBg;
+
 
     @Override
     public void render(float delta) {
@@ -47,16 +46,20 @@ public class MainMenu implements Screen {
     @Override
     public void resize(int width, int height) {
         stage.getViewport().update(width, height, true);
+        // Make the background fill the screen
+        screenBg.setSize(width, height);
         table.invalidateHierarchy();
     }
 
     @Override
     public void show() {
         stage = new Stage(new ScreenViewport());
-
         Gdx.input.setInputProcessor(stage);
+        TextureAtlas uiPack = MasterWarrior.manager.get("ui/newUI.pack", TextureAtlas.class);
+        skin = new Skin(Gdx.files.internal("ui/menuSkin.json"), uiPack);
+        screenBg = new Image(uiPack.findRegion("blank_window"));
+        stage.addActor(screenBg);
 
-        skin = new Skin(Gdx.files.internal("ui/menuSkin.json"), new TextureAtlas("ui/atlas.pack"));
 
         table = new Table(skin);
         table.setFillParent(true);
@@ -65,7 +68,8 @@ public class MainMenu implements Screen {
         heading.setFontScale(1.5f);
 
         //Play Button
-        TextButton buttonPlay = new TextButton("PLAY", skin, "big");
+        TextButton buttonPlay = new TextButton("PLAY", skin, "default");
+
         buttonPlay.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
@@ -162,7 +166,6 @@ public class MainMenu implements Screen {
 
     @Override
     public void dispose() {
-        stage.dispose();
-        skin.dispose();
+
     }
 }

@@ -1,0 +1,103 @@
+
+newUI.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+blank_window
+  rotate: false
+  xy: 0, 0
+  size: 823, 507
+  orig: 823, 507
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 823, 350
+  size: 967, 157
+  orig: 967, 157
+  offset: 0, 0
+  index: -1
+progress_bar_empty
+  rotate: false
+  xy: 823, 267
+  size: 567, 83
+  orig: 567, 83
+  offset: 0, 0
+  index: -1
+progress_bar_frame
+  rotate: false
+  xy: 823, 184
+  size: 567, 83
+  orig: 567, 83
+  offset: 0, 0
+  index: -1
+progress_bar
+  rotate: false
+  xy: 823, 143
+  size: 533, 41
+  orig: 533, 41
+  offset: 0, 0
+  index: -1
+progress_bar_background
+  rotate: false
+  xy: 823, 105
+  size: 533, 38
+  orig: 533, 38
+  offset: 0, 0
+  index: -1
+blank_field
+  rotate: false
+  xy: 1390, 284
+  size: 207, 66
+  orig: 207, 66
+  offset: 0, 0
+  index: -1
+button_down
+  rotate: false
+  xy: 823, 58
+  size: 209, 47
+  orig: 209, 47
+  offset: 0, 0
+  index: -1
+button_up
+  rotate: false
+  xy: 823, 11
+  size: 209, 47
+  orig: 209, 47
+  offset: 0, 0
+  index: -1
+progress_bar_layer
+  rotate: false
+  xy: 1356, 146
+  size: 9, 38
+  orig: 9, 38
+  offset: 0, 0
+  index: -1
+arrow_right
+  rotate: false
+  xy: 1390, 263
+  size: 17, 21
+  orig: 17, 21
+  offset: 0, 0
+  index: -1
+checkbox.off
+  rotate: false
+  xy: 1597, 334
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+checkbox.on
+  rotate: false
+  xy: 1032, 89
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+default.selection
+  rotate: false
+  xy: 1790, 504
+  size: 3, 3
+  orig: 3, 3
+  offset: 0, 0
+  index: -1

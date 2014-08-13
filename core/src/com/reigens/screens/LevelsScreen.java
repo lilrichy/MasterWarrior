@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.reigens.MasterWarrior;
 import com.reigens.screens.Levels.LevelOne;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
@@ -18,6 +19,7 @@ public class LevelsScreen implements Screen {
     private Stage stage;
     private Table table;
     private Skin skin;
+    private Image screenBg;
 
     @Override
     public void render(float delta) {
@@ -32,6 +34,8 @@ public class LevelsScreen implements Screen {
     @Override
     public void resize(int width, int height) {
         stage.getViewport().update(width, height, true);
+        // Make the background fill the screen
+        screenBg.setSize(width, height);
         table.invalidateHierarchy();
     }
 
@@ -41,7 +45,11 @@ public class LevelsScreen implements Screen {
 
         Gdx.input.setInputProcessor(stage);
 
-        skin = new Skin(Gdx.files.internal("ui/menuSkin.json"), new TextureAtlas("ui/atlas.pack"));
+        TextureAtlas uiPack = MasterWarrior.manager.get("ui/newUI.pack", TextureAtlas.class);
+        skin = new Skin(Gdx.files.internal("ui/menuSkin.json"), uiPack);
+        screenBg = new Image(uiPack.findRegion("blank_window"));
+        stage.addActor(screenBg);
+
 
         table = new Table(skin);
         table.setFillParent(true);
@@ -95,10 +103,11 @@ public class LevelsScreen implements Screen {
         back.pad(10);
 
         //Set up Table
-        table.add(new Label("SELECT LEVEL", skin, "big")).colspan(3).expandX().spaceBottom(50).row();
-        table.add(scrollPane).uniformX().expandY().left();
+
+        table.add(new Label("SELECT LEVEL", skin, "big")).padTop(100).colspan(3).expandX().spaceBottom(50).row();
+        table.add(scrollPane).uniformX().expandY().padLeft(125).left();
         table.add(play).uniformX();
-        table.add(back).uniformX().bottom().right();
+        table.add(back).uniformX().padBottom(100).padRight(125).bottom().right();
 
         stage.addActor(table);
 
@@ -122,8 +131,7 @@ public class LevelsScreen implements Screen {
 
     @Override
     public void dispose() {
-        stage.dispose();
-        skin.dispose();
+
     }
 
 }

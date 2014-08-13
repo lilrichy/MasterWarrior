@@ -16,28 +16,28 @@
 		black16: { file: font/black16.fnt }
 	},
 	com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
-		default: { font: white32, fontColor: white },
-		big:     { font: white64, fontColor: white },
-		small:   { font: white16, fontColor: white }
+		default: { font: black32, fontColor: white },
+		big:     { font: black64, fontColor: white },
+		small:   { font: black16, fontColor: white }
 	},
 	com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
-		default: { up: button.up, down: button.down, font: black32, pressedOffsetX: 1, pressedOffsetY: -1 },
-		big:     { up: button.up, down: button.down, font: black64, pressedOffsetX: 1, pressedOffsetY: -1 },
-		small:   { up: button.up, down: button.down, font: black16, pressedOffsetX: 1, pressedOffsetY: -1 }
+		default: { up: button_up, down: button_down, font: black32, pressedOffsetX: 1, pressedOffsetY: -1 },
+		big:     { up: button_up, down: button_down, font: black64, pressedOffsetX: 1, pressedOffsetY: -1 },
+		small:   { up: button_up, down: button_down, font: black16, pressedOffsetX: 1, pressedOffsetY: -1 }
 	},
 	com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle: {
-		default: { font: white32, fontColorUnselected: white, fontColorSelected: black, selection: default.selection }
+		default: { font: black32, fontColorUnselected: black, fontColorSelected: black, selection: default.selection }
 	},
 	com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
-		default: { hScrollKnob: button.up, vScrollKnob: button.up }
+		default: { hScrollKnob: button_up, vScrollKnob: button_up }
 	},
 	com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
-		default: { font: white32, checkboxOn: checkbox.on, checkboxOff: checkbox.off, checkboxOver: checkbox.over }
+		default: { font: white32, checkboxOn: checkbox.on, checkboxOff: checkbox.off, checkboxOver: checkbox.off }
 	},
 	com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
-		default: { font: black32, fontColor: black, messageFontColor: gray, background: default.background, cursor: default.selection }
+		default: { font: black16, fontColor: black, messageFontColor: gray, background: blank_field, cursor: default.selection }
 	},
 	"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
-    		"default": { "titleFont": "black64", "background": "default.selection", "stageBackground": "default.selection" }
+    		"default": { "titleFont": "black64", "background": "button_up", "stageBackground": "blank_window" }
     }
 }

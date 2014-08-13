@@ -11,6 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.TimeUtils;
+import com.reigens.MasterWarrior;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
@@ -23,6 +24,7 @@ public class GoldScreen implements Screen {
     private Stage stage;
     private Table table;
     private Skin skin;
+    private Image screenBg;
     private long goldamt;
     private Label lablegold;
     private int goldLvl;
@@ -48,6 +50,8 @@ public class GoldScreen implements Screen {
     @Override
     public void resize(int width, int height) {
         stage.getViewport().update(width, height, true);
+        // Make the background fill the screen
+        screenBg.setSize(width, height);
         table.invalidateHierarchy();
     }
 
@@ -56,8 +60,11 @@ public class GoldScreen implements Screen {
         stage = new Stage();
 
         Gdx.input.setInputProcessor(stage);
+        TextureAtlas uiPack = MasterWarrior.manager.get("ui/newUI.pack", TextureAtlas.class);
+        skin = new Skin(Gdx.files.internal("ui/menuSkin.json"), uiPack);
+        screenBg = new Image(uiPack.findRegion("blank_window"));
+        stage.addActor(screenBg);
 
-        skin = new Skin(Gdx.files.internal("ui/menuSkin.json"), new TextureAtlas("ui/atlas.pack"));
 
         table = new Table(skin);
         table.setFillParent(true);
@@ -70,8 +77,7 @@ public class GoldScreen implements Screen {
             public void clicked(InputEvent event, float x, float y) {
                 new Dialog("Upgrade?", skin) {
                     {
-
-
+                        ;
                         text("\n\n" +
                                 "Are you sure you want to spend" +
 
@@ -80,7 +86,9 @@ public class GoldScreen implements Screen {
                                 "\n\n ");
                         button("Purchase!", true);
                         button("Cancel", false);
+
                     }
+
 
                     @Override
                     protected void result(Object object) {
@@ -119,12 +127,12 @@ public class GoldScreen implements Screen {
         back.pad(10);
 
         //Set up Table
-        table.add(new Label("Gold", skin, "big")).colspan(3).expandX().spaceBottom(50).row();
+        table.add(new Label("Gold", skin, "big")).padTop(100).colspan(3).expandX().spaceBottom(50).row();
         lablegold = new Label(String.format("Earning Gold: %s", goldamt), skin);
-        table.add(lablegold).uniformX().expandY().left().row();
+        table.add(lablegold).padLeft(125).uniformX().expandY().left().row();
         table.add(new Label("Gold Level: " + (String.valueOf(goldLvl)), skin, "default"));
         table.add(upgradegold).uniformX();
-        table.add(back).uniformX().bottom().right();
+        table.add(back).padBottom(100).padRight(125).uniformX().bottom().right();
 
         stage.addActor(table);
 
@@ -163,8 +171,7 @@ public class GoldScreen implements Screen {
 
     @Override
     public void dispose() {
-        stage.dispose();
-        skin.dispose();
+
 
     }
 }
