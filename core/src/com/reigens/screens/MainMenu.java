@@ -20,21 +20,20 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.reigens.MasterWarrior;
 import com.reigens.tween.ActorAssessor;
+
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
 /**
  * Created by Rich on 8/8/2014.
  */
-public class MainMenu implements Screen
-{
+public class MainMenu implements Screen {
     private Stage stage;
     private Skin skin;
     private Table table;
     private TweenManager tweenManager;
 
     @Override
-    public void render(float delta)
-    {
+    public void render(float delta) {
         delta = MathUtils.clamp(delta, 0, 1 / 30f);
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
@@ -46,15 +45,13 @@ public class MainMenu implements Screen
     }
 
     @Override
-    public void resize(int width, int height)
-    {
+    public void resize(int width, int height) {
         stage.getViewport().update(width, height, true);
         table.invalidateHierarchy();
     }
 
     @Override
-    public void show()
-    {
+    public void show() {
         stage = new Stage(new ScreenViewport());
 
         Gdx.input.setInputProcessor(stage);
@@ -69,17 +66,13 @@ public class MainMenu implements Screen
 
         //Play Button
         TextButton buttonPlay = new TextButton("PLAY", skin, "big");
-        buttonPlay.addListener(new ClickListener()
-        {
+        buttonPlay.addListener(new ClickListener() {
             @Override
-            public void clicked(InputEvent event, float x, float y)
-            {
-                stage.addAction(sequence(moveTo(0, -stage.getHeight(), .5f), run(new Runnable()
-                {
+            public void clicked(InputEvent event, float x, float y) {
+                stage.addAction(sequence(moveTo(0, -stage.getHeight(), .5f), run(new Runnable() {
                     @Override
-                    public void run()
-                    {
-                        ((Game) Gdx.app.getApplicationListener()).setScreen(new Levels());
+                    public void run() {
+                        ((Game) Gdx.app.getApplicationListener()).setScreen(new LevelsScreen());
                     }
                 })));
             }
@@ -88,16 +81,12 @@ public class MainMenu implements Screen
 
         //Settings Button
         TextButton buttonSettings = new TextButton("Settings", skin, "default");
-        buttonSettings.addListener(new ClickListener()
-        {
+        buttonSettings.addListener(new ClickListener() {
             @Override
-            public void clicked(InputEvent event, float x, float y)
-            {
-                stage.addAction(sequence(moveTo(0, -stage.getHeight(), .5f), run(new Runnable()
-                {
+            public void clicked(InputEvent event, float x, float y) {
+                stage.addAction(sequence(moveTo(0, -stage.getHeight(), .5f), run(new Runnable() {
                     @Override
-                    public void run()
-                    {
+                    public void run() {
                         ((Game) Gdx.app.getApplicationListener()).setScreen(new SettingsScreen());
                     }
                 })));
@@ -107,11 +96,9 @@ public class MainMenu implements Screen
 
         //Exit Button
         TextButton buttonExit = new TextButton("Exit", skin, "default");
-        buttonExit.addListener(new ClickListener()
-        {
+        buttonExit.addListener(new ClickListener() {
             @Override
-            public void clicked(InputEvent event, float x, float y)
-            {
+            public void clicked(InputEvent event, float x, float y) {
                 Gdx.app.exit();
             }
         });
@@ -159,26 +146,22 @@ public class MainMenu implements Screen
     }
 
     @Override
-    public void hide()
-    {
+    public void hide() {
         dispose();
     }
 
     @Override
-    public void pause()
-    {
+    public void pause() {
 
     }
 
     @Override
-    public void resume()
-    {
+    public void resume() {
 
     }
 
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         stage.dispose();
         skin.dispose();
     }

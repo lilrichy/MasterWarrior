@@ -10,10 +10,11 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.reigens.screens.Levels.LevelOne;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
-public class Levels implements Screen {
+public class LevelsScreen implements Screen {
     private Stage stage;
     private Table table;
     private Skin skin;
@@ -46,7 +47,7 @@ public class Levels implements Screen {
         table.setFillParent(true);
 
         final List list = new List(skin);
-        list.setItems(new String[]{"Play", "Menu"});
+        list.setItems(new String[]{"Play", "Menu", "Level 1"});
         ScrollPane scrollPane = new ScrollPane(list, skin);
 
         //Play button
@@ -64,6 +65,9 @@ public class Levels implements Screen {
                                 break;
                             case 1:
                                 ((Game) Gdx.app.getApplicationListener()).setScreen(new MainMenu());
+                                break;
+                            case 2:
+                                ((Game) Gdx.app.getApplicationListener()).setScreen(new LevelOne());
                                 break;
 
 

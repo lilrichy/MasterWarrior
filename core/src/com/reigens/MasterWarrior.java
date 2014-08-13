@@ -1,15 +1,18 @@
 package com.reigens;
 
 import com.badlogic.gdx.Game;
-import com.reigens.screens.GoldScreen;
+import com.badlogic.gdx.assets.AssetManager;
+import com.reigens.screens.LoadingScreen;
 
 public class MasterWarrior extends Game {
     public static final String TITLE = "Master Warrior";
     public static final String VERSION = "0.0.0.2";
 
+    public AssetManager manager = new AssetManager();
+
     @Override
     public void create() {
-        setScreen(new GoldScreen());
+        setScreen(new LoadingScreen(this));
     }
 
     @Override

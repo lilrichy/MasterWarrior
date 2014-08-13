@@ -29,10 +29,6 @@ public class GoldScreen implements Screen {
     private boolean isUpgradeing;
 
 
-
-
-
-
     @Override
     public void render(float delta) {
         delta = MathUtils.clamp(delta, 0, 1 / 30f);
@@ -125,7 +121,8 @@ public class GoldScreen implements Screen {
         //Set up Table
         table.add(new Label("Gold", skin, "big")).colspan(3).expandX().spaceBottom(50).row();
         lablegold = new Label(String.format("Earning Gold: %s", goldamt), skin);
-        table.add(lablegold).uniformX().expandY().left();
+        table.add(lablegold).uniformX().expandY().left().row();
+        table.add(new Label("Gold Level: " + (String.valueOf(goldLvl)), skin, "default"));
         table.add(upgradegold).uniformX();
         table.add(back).uniformX().bottom().right();
 
@@ -144,6 +141,7 @@ public class GoldScreen implements Screen {
 
     private void preformUpgrade() {
         isUpgradeing = true;
+
     }
 
 
