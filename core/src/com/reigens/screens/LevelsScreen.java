@@ -11,7 +11,6 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.reigens.MasterWarrior;
-import com.reigens.screens.Levels.LevelOne;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 

@@ -64,7 +64,7 @@ public class MainMenu implements Screen {
         table = new Table(skin);
         table.setFillParent(true);
 
-        Label heading = new Label(MasterWarrior.TITLE, skin);
+        Label heading = new Label(MasterWarrior.TITLE, skin, "bigWhite");
         heading.setFontScale(1.5f);
 
         //Play Button

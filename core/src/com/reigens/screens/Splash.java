@@ -16,19 +16,16 @@ import com.badlogic.gdx.math.MathUtils;
 import com.reigens.tween.SpriteAccessor;
 
 
-
 /**
  * Created by Rich on 8/8/2014.
  */
-public class Splash implements Screen
-{
+public class Splash implements Screen {
     private SpriteBatch batch;
     private Sprite splash;
     private TweenManager tweenManager;
 
     @Override
-    public void render(float delta)
-    {
+    public void render(float delta) {
         delta = MathUtils.clamp(delta, 0, 1 / 30f);
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
@@ -41,14 +38,12 @@ public class Splash implements Screen
     }
 
     @Override
-    public void resize(int width, int height)
-    {
+    public void resize(int width, int height) {
         splash.setSize(width, height);
     }
 
     @Override
-    public void show()
-    {
+    public void show() {
         //Load Preferences
         Gdx.graphics.setVSync(SettingsScreen.vSync());
 
@@ -65,8 +60,7 @@ public class Splash implements Screen
 
         {
             @Override
-            public void onEvent(int i, BaseTween<?> baseTween)
-            {
+            public void onEvent(int i, BaseTween<?> baseTween) {
                 ((Game) Gdx.app.getApplicationListener()).setScreen(new MainMenu());
             }
         }).start(tweenManager);
@@ -75,26 +69,22 @@ public class Splash implements Screen
     }
 
     @Override
-    public void hide()
-    {
+    public void hide() {
         dispose();
     }
 
     @Override
-    public void pause()
-    {
-        tweenManager.pause();
-    }
-
-    @Override
-    public void resume()
-    {
+    public void pause() {
 
     }
 
     @Override
-    public void dispose()
-    {
+    public void resume() {
+
+    }
+
+    @Override
+    public void dispose() {
         batch.dispose();
         splash.getTexture().dispose();
     }

@@ -1,0 +1,1220 @@
+
+buildings.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+barracks/renders/idle/135/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+barracks/renders/idle/225/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+barracks/renders/idle/315/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+barracks/renders/idle/45/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings5.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+church/renders/idle/135/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 146
+  orig: 128, 146
+  offset: 0, 0
+  index: -1
+
+buildings6.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+church/renders/idle/225/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 146
+  orig: 128, 146
+  offset: 0, 0
+  index: -1
+
+buildings7.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+church/renders/idle/315/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 146
+  orig: 128, 146
+  offset: 0, 0
+  index: -1
+
+buildings8.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+church/renders/idle/45/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 146
+  orig: 128, 146
+  offset: 0, 0
+  index: -1
+
+buildings9.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+firestation/renders/idle/135/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings10.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+firestation/renders/idle/225/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings11.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+firestation/renders/idle/315/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings12.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+firestation/renders/idle/45/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings13.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/idle_empty/135/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings14.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/idle_empty/225/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings15.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/idle_empty/315/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings16.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/idle_empty/45/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings17.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/idle_full/135/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings18.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/idle_full/225/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings19.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/idle_full/315/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings20.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/idle_full/45/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings21.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/work/135/000
+  rotate: false
+  xy: 0, 192
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/135/004
+  rotate: false
+  xy: 0, 192
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/135/001
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/135/002
+  rotate: false
+  xy: 192, 192
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/135/003
+  rotate: false
+  xy: 192, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings22.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/work/225/000
+  rotate: false
+  xy: 0, 192
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/225/004
+  rotate: false
+  xy: 0, 192
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/225/001
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/225/002
+  rotate: false
+  xy: 192, 192
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/225/003
+  rotate: false
+  xy: 192, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings23.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/work/315/000
+  rotate: false
+  xy: 0, 192
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/315/004
+  rotate: false
+  xy: 0, 192
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/315/001
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/315/002
+  rotate: false
+  xy: 192, 192
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/315/003
+  rotate: false
+  xy: 192, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings24.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+herbary/renders/work/45/000
+  rotate: false
+  xy: 0, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/45/001
+  rotate: false
+  xy: 192, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/45/002
+  rotate: false
+  xy: 384, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/45/003
+  rotate: false
+  xy: 576, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+herbary/renders/work/45/004
+  rotate: false
+  xy: 768, 0
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+
+buildings25.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+preview
+  rotate: false
+  xy: 0, 0
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+
+buildings26.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+signal_fire/renders/idle/135/000
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+
+buildings27.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+signal_fire/renders/idle/225/000
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+
+buildings28.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+signal_fire/renders/idle/315/000
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+
+buildings29.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+signal_fire/renders/idle/45/000
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+
+buildings30.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+signal_fire/renders/work/135/000
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/015
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/001
+  rotate: false
+  xy: 64, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/002
+  rotate: false
+  xy: 128, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/003
+  rotate: false
+  xy: 192, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/004
+  rotate: false
+  xy: 256, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/005
+  rotate: false
+  xy: 320, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/006
+  rotate: false
+  xy: 384, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/007
+  rotate: false
+  xy: 448, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/008
+  rotate: false
+  xy: 512, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/009
+  rotate: false
+  xy: 576, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/010
+  rotate: false
+  xy: 640, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/011
+  rotate: false
+  xy: 704, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/012
+  rotate: false
+  xy: 768, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/013
+  rotate: false
+  xy: 832, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/135/014
+  rotate: false
+  xy: 896, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+
+buildings31.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+signal_fire/renders/work/225/000
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/015
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/001
+  rotate: false
+  xy: 64, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/002
+  rotate: false
+  xy: 128, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/003
+  rotate: false
+  xy: 192, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/004
+  rotate: false
+  xy: 256, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/005
+  rotate: false
+  xy: 320, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/006
+  rotate: false
+  xy: 384, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/007
+  rotate: false
+  xy: 448, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/008
+  rotate: false
+  xy: 512, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/009
+  rotate: false
+  xy: 576, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/010
+  rotate: false
+  xy: 640, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/011
+  rotate: false
+  xy: 704, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/012
+  rotate: false
+  xy: 768, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/013
+  rotate: false
+  xy: 832, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/225/014
+  rotate: false
+  xy: 896, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+
+buildings32.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+signal_fire/renders/work/315/000
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/015
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/001
+  rotate: false
+  xy: 64, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/002
+  rotate: false
+  xy: 128, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/003
+  rotate: false
+  xy: 192, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/004
+  rotate: false
+  xy: 256, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/005
+  rotate: false
+  xy: 320, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/006
+  rotate: false
+  xy: 384, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/007
+  rotate: false
+  xy: 448, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/008
+  rotate: false
+  xy: 512, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/009
+  rotate: false
+  xy: 576, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/010
+  rotate: false
+  xy: 640, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/011
+  rotate: false
+  xy: 704, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/012
+  rotate: false
+  xy: 768, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/013
+  rotate: false
+  xy: 832, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/315/014
+  rotate: false
+  xy: 896, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+
+buildings33.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+signal_fire/renders/work/45/000
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/010
+  rotate: false
+  xy: 0, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/001
+  rotate: false
+  xy: 64, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/002
+  rotate: false
+  xy: 128, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/003
+  rotate: false
+  xy: 192, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/004
+  rotate: false
+  xy: 256, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/005
+  rotate: false
+  xy: 320, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/006
+  rotate: false
+  xy: 384, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/007
+  rotate: false
+  xy: 448, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/008
+  rotate: false
+  xy: 512, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/009
+  rotate: false
+  xy: 576, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/011
+  rotate: false
+  xy: 640, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/012
+  rotate: false
+  xy: 704, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/013
+  rotate: false
+  xy: 768, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/014
+  rotate: false
+  xy: 832, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+signal_fire/renders/work/45/015
+  rotate: false
+  xy: 896, 0
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+
+buildings34.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+weaponsmith/renders/idle/135/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings35.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+weaponsmith/renders/idle/225/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings36.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+weaponsmith/renders/idle/315/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings37.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+weaponsmith/renders/idle/45/000
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings38.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+weaponsmith/renders/work/135/000
+  rotate: false
+  xy: 0, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/135/001
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/135/002
+  rotate: false
+  xy: 128, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/135/003
+  rotate: false
+  xy: 128, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/135/004
+  rotate: false
+  xy: 256, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/135/005
+  rotate: false
+  xy: 256, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/135/006
+  rotate: false
+  xy: 384, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/135/007
+  rotate: false
+  xy: 384, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings39.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+weaponsmith/renders/work/225/000
+  rotate: false
+  xy: 0, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/225/001
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/225/002
+  rotate: false
+  xy: 128, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/225/003
+  rotate: false
+  xy: 128, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/225/004
+  rotate: false
+  xy: 256, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/225/005
+  rotate: false
+  xy: 256, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/225/006
+  rotate: false
+  xy: 384, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/225/007
+  rotate: false
+  xy: 384, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings40.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+weaponsmith/renders/work/315/000
+  rotate: false
+  xy: 0, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/315/001
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/315/002
+  rotate: false
+  xy: 128, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/315/003
+  rotate: false
+  xy: 128, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/315/004
+  rotate: false
+  xy: 256, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/315/005
+  rotate: false
+  xy: 256, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/315/006
+  rotate: false
+  xy: 384, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/315/007
+  rotate: false
+  xy: 384, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+
+buildings41.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+weaponsmith/renders/work/45/000
+  rotate: false
+  xy: 0, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/45/001
+  rotate: false
+  xy: 0, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/45/002
+  rotate: false
+  xy: 128, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/45/003
+  rotate: false
+  xy: 128, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/45/004
+  rotate: false
+  xy: 256, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/45/005
+  rotate: false
+  xy: 256, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/45/006
+  rotate: false
+  xy: 384, 128
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+weaponsmith/renders/work/45/007
+  rotate: false
+  xy: 384, 0
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

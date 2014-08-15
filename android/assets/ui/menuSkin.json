@@ -16,9 +16,10 @@
 		black16: { file: font/black16.fnt }
 	},
 	com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
-		default: { font: black32, fontColor: white },
-		big:     { font: black64, fontColor: white },
-		small:   { font: black16, fontColor: white }
+		default: { font: black32, fontColor: black },
+		big:     { font: black64, fontColor: black },
+		small:   { font: black16, fontColor: black },
+		bigWhite: { font: white64, fontColor: white }
 	},
 	com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
 		default: { up: button_up, down: button_down, font: black32, pressedOffsetX: 1, pressedOffsetY: -1 },

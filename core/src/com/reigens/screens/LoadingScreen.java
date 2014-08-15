@@ -36,6 +36,7 @@ public class LoadingScreen extends AbstractScreen {
         super(game);
     }
 
+
     @Override
     public void show() {
 //		stage.setViewport(new FitViewport(800, 480, new PerspectiveCamera()));
@@ -140,7 +141,7 @@ public class LoadingScreen extends AbstractScreen {
             }
         }
         // Interpolate the percentage to make it more smooth
-        percent = Interpolation.linear.apply(percent, game.manager.getProgress(), 0.03f);
+        percent = Interpolation.linear.apply(percent, game.manager.getProgress(), 0.1f);
 
         // Update positions (and size) to match the percentage
         loadingBarHidden.setX(startX + endX * percent);
