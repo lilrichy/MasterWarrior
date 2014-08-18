@@ -13,29 +13,27 @@ import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.IsometricTiledMapRenderer;
 import com.badlogic.gdx.math.Intersector;
-import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Plane;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.math.collision.Ray;
+import com.reigens.screens.helper.MyGestureListener;
 import com.reigens.screens.helper.OrthoCamController;
-
 
 /**
  * Created by Rich on 8/12/2014.
  */
-public class LevelOne implements Screen, InputProcessor {
 
-    private static final int TARGET_WIDTH = 1028;
-    private static final float UNIT_TO_PIXEL = TARGET_WIDTH * 0.15f;
-    final Matrix4 matrix = new Matrix4();
+public class LevelOne extends GestureDetector.GestureAdapter implements Screen, InputProcessor {
+
     final Plane xzPlane = new Plane(new Vector3(0, 1, 0), 0);
     final Vector3 intersection = new Vector3();
     OrthoCamController orthoCamController;
-    GestureDetector gesture;
     Sprite lastSelectedTile = null;
     private TiledMap map;
     private IsometricTiledMapRenderer mapRenderer;
     private OrthographicCamera camera;
+    private GestureDetector gestureDetector;
+
 
     @Override
     public void render(float delta) {
@@ -45,7 +43,6 @@ public class LevelOne implements Screen, InputProcessor {
         mapRenderer.setView(camera);
         mapRenderer.render();
 
-
         checkTileTouched();
         camera.update();
     }
@@ -54,14 +51,13 @@ public class LevelOne implements Screen, InputProcessor {
     public void resize(int width, int height) {
         camera.viewportWidth = width;
         camera.viewportHeight = height;
-        // setupCamera(width, height);
-
     }
 
     @Override
     public void show() {
-        Gdx.input.setInputProcessor(this);
 
+        Gdx.input.setInputProcessor(this);
+        gestureDetector = new GestureDetector(new MyGestureListener(camera));
         map = new TmxMapLoader().load("maps/testMap.tmx");
         mapRenderer = new IsometricTiledMapRenderer(map);
 
@@ -72,15 +68,33 @@ public class LevelOne implements Screen, InputProcessor {
         camera.near = 1;
         camera.far = 1000;
 
-
         orthoCamController = new OrthoCamController(camera);
 
-
         System.out.println("Show Method");
+    }
 
+    @Override
+    public void hide() {
+        dispose();
+    }
+
+    @Override
+    public void pause() {
 
     }
 
+    @Override
+    public void resume() {
+
+    }
+
+    @Override
+    public void dispose() {
+        map.dispose();
+        mapRenderer.dispose();
+    }
+
+    //Keys and touch overrides
     @Override
     public boolean touchDragged(int x, int y, int pointer) {
         return orthoCamController.touchDragged(x, y, pointer);
@@ -102,33 +116,9 @@ public class LevelOne implements Screen, InputProcessor {
             if (x >= 0 && x < 10 && z >= 0 && z < 10)
             {
                 if (lastSelectedTile != null) lastSelectedTile.setColor(1, 1, 1, 1);
-
             }
         }
     }
-
-    @Override
-    public void hide() {
-        dispose();
-
-    }
-
-    @Override
-    public void pause() {
-
-    }
-
-    @Override
-    public void resume() {
-
-    }
-
-    @Override
-    public void dispose() {
-        map.dispose();
-        mapRenderer.dispose();
-    }
-
 
     @Override
     public boolean mouseMoved(int screenX, int screenY) {
@@ -137,9 +127,11 @@ public class LevelOne implements Screen, InputProcessor {
 
     @Override
     public boolean scrolled(int amount) {
-        return false;
+        System.out.println(amount);
+        return true;
     }
 
+    @Override
     public boolean keyDown(int keycode) {
         switch (keycode)
         {
@@ -164,13 +156,11 @@ public class LevelOne implements Screen, InputProcessor {
                 break;
 
             case Input.Keys.PLUS:
-                camera.zoom += 0.5;
+                camera.zoom += 0.5f;
                 break;
 
             case Input.Keys.MINUS:
-                camera.zoom -= 0.5;
-
-
+                camera.zoom -= 0.5f;
         }
         return true;
     }
@@ -189,5 +179,6 @@ public class LevelOne implements Screen, InputProcessor {
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
         return false;
     }
+
 
 }
