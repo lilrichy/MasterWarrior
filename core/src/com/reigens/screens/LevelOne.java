@@ -34,7 +34,6 @@ public class LevelOne extends GestureDetector.GestureAdapter implements Screen, 
     private OrthographicCamera camera;
     private GestureDetector gestureDetector;
 
-
     @Override
     public void render(float delta) {
         Gdx.gl.glClearColor(0, 0, 0, 1);
@@ -65,7 +64,7 @@ public class LevelOne extends GestureDetector.GestureAdapter implements Screen, 
         TiledMapTileLayer layer0 = (TiledMapTileLayer) map.getLayers().get(1);
         Vector3 center = new Vector3(layer0.getWidth() * layer0.getTileWidth() / 2, layer0.getHeight() * layer0.getTileHeight() / 10, 20);
         camera.position.set(center);
-        camera.near = 1;
+        camera.near = .5f;
         camera.far = 1000;
 
         orthoCamController = new OrthoCamController(camera);
@@ -127,6 +126,23 @@ public class LevelOne extends GestureDetector.GestureAdapter implements Screen, 
 
     @Override
     public boolean scrolled(int amount) {
+        switch (amount)
+        {
+            case 1:
+                System.out.println(camera.zoom);
+                if (camera.zoom <= 1.5f)
+                {
+                    camera.zoom += .2f;
+                }
+                break;
+
+            case -1:
+                System.out.println(camera.zoom);
+                if (camera.zoom >= .5f)
+                {
+                    camera.zoom -= .2f;
+                }
+        }
         System.out.println(amount);
         return true;
     }
@@ -179,6 +195,5 @@ public class LevelOne extends GestureDetector.GestureAdapter implements Screen, 
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
         return false;
     }
-
 
 }
